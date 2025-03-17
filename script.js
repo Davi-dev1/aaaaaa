@@ -10,7 +10,15 @@ const btnSubmit = document.querySelector('input[type="submit"]');
 
 const formData= new FormData(form);
 console.log(formData);
-
+const data={
+razaoSocial:formData.get('razaoSocial'),
+emailDaEmpresa: formData.get('emailDaEmpresa'),
+CNPJDaEmpresa:formData.get('CNPJDaEmpresa'),
+SenhaDaEmpresa:formData.get( 'SenhaDaEmpresa'),
+TelefoneDaEmpresa:formData.get('TelefoneDaEmpresa'),
+EnderecoDaEmpresa:formData.get('EnderecoDaEmpresa'),
+CapitalSocial:formData.get('CapitalSocial')
+};
 
 
             const response = await fetch(url, {
