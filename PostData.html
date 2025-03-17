@@ -1,0 +1,112 @@
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/css.css">
+<link rel="icon" href="favicons/icons8-enterprise-50.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <svg class="bi me-2" width="40" height="32">
+                </svg>
+                <div class="everyone">
+                <span class="fs-4">BitByte Commerce</span>
+            </a>
+            <div class="btn">
+            
+
+                <a  href="index.html"><button class="botoes" type="link">Home</button></a>
+                <a href="PostData.html"><button class="botoes" type="link">Cadastro</button></a>
+            </div>    
+            
+        </header>
+    </div>
+    <div class="container">
+        <div class="col-md-12 col-lg-12">
+            <h4 class="mb-3">Cadastrar</h4>
+           <p id="welcome"> Seja bem vindo a BitByte Commerce</p>
+            <p>Abaixo consta o  local de cadastro aonde você microempreendor pode registrar seu negócio: </p>
+
+
+            <form action="http://localhost:8083/Empresas/salvar" id="formulario" class="needs-validation">
+
+                <div class="item">
+
+                <div class="col-sm-12">
+                    <label for="Razaosocial" class="form-label">Razão social:</label>
+                    <input type="text" name="Razaosocial" id="Razaosocial" class="form-control" required>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Emaildaempresa" class="form-label">Email da empresa:</label>
+                    <input type="email" name="Emaildaempresa" id="Emaildaempresa" class="form-control" required>
+                </div>
+                <div class="col-sm-12">
+                    <label for="CNPJdaempresa" class="form-label">CNPJ da empresa:</label>
+                    <input type="text" name="CNPJdaempresa" id="CNPJdaempresa" class="form-control" required>
+                </div>
+
+             
+
+                <div class="col-sm-12">
+                    <label for="Senhadaempresa" class="form-label">Senha:</label>
+                    <input type="password" name="Senhadaempresa" id="Senhadaempresa" class="form-control" required>
+                </div>
+
+
+
+                <div class="col-sm-12">
+                    <label for="Telefonedaempresa" class="form-label">Telefone:</label>
+                    <input type="text" name="Telefonedaempresa" id="Telefonedaempresa" class="form-control" required>
+                </div>
+
+
+                
+                <div class="col-sm-12">
+                    <label for="Enderecodaempresa" class="form-label">Endereço da empresa:</label>
+                    <input type="text" name="Enderecodaempresa" id="Enderecodaempresa" class="form-control" required>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Capitalsocial" class="form-label">Capital Social:</label>
+                    <input type="text" name="Capitalsocial" id="Capitalsocial" class="form-control" required>
+                </div>
+
+                </label>
+                <div class="botao">
+                <div class="row">
+                    <input type="submit" class="my-4 w-100 btn btn-primary btn-lg" id="enviar"
+                        value="Registrar Cadastro">
+                    </div>
+                </div>
+                </div>
+
+                </div>
+                <div class="row">
+                    <div id="response" class="response">
+
+                    </div>
+
+                    <div id="txtFeedback" class="text-red text-center">
+
+
+                        <div id="txtFeedback" class="text-red text-center">
+
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="Javascripts/script.js"></script>
+</body>
+
+</html>
